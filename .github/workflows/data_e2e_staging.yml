@@ -41,4 +41,8 @@ jobs:
           --GCSSchemasBucketName=autofleet_schemas \
           --dataset=banias \
           --numWorkers=3 \
+<<<<<<< HEAD
           "
+=======
+          "
+>>>>>>> origin/master
