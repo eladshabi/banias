@@ -27,7 +27,7 @@ jobs:
       - name: upload file
         shell: bash
         run: |
-          mvn exec:java -Dexec.mainClass=com.doitintl.banias.BaniasPipeline \
+          mvn exec :java -Dexec.mainClass=com.doitintl.banias.BaniasPipeline \
           -Dexec.cleanupDaemonThreads=false \
           -Dexec.args=" \
           --project=elad-playground \
