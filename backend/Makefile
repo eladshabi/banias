@@ -18,8 +18,8 @@ EVENTS_SUBSCRIPTION_PATH="projects/$(PROJECT_ID)/subscriptions/$(SUBSCRIPTION_NA
 ERRORS_TABLE_NAME=error
 DATASET=banias
 
-publish_test_file_path = "/home/elads/banias/banias/backend/src/test/Publish_events.py"
-pipeline_test_file_path = "/home/elads/banias/banias/backend/src/test/test_e2e.py"
+publish_test_file_path = "/Users/eladshabi/IdeaProjects/elad-banias/backend/src/test/Publish_events.py"
+pipeline_test_file_path = "/Users/eladshabi/IdeaProjects/elad-banias/backend/src/test/test_e2e.py"
 
 
 env_setup: _create_buckets _create_topic _create_subscription _create_dataset

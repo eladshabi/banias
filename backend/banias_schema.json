@@ -1,0 +1,20 @@
+{
+    "fields": [
+  {
+    "mode": "NULLABLE",
+    "name": "SenderID",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Event",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "payload",
+    "type": "STRING"
+  }
+    ]
+}
+
