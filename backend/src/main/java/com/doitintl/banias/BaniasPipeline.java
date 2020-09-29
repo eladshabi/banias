@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-class BaniasPipeline {
+public class BaniasPipeline {
 	private static final Logger LOG = LoggerFactory.getLogger(BaniasPipeline.class);
 	private static final TupleTag<TableRow> outputTag= new TupleTag<TableRow>(){
 		private static final long serialVersionUID = 4585472024291962044L;
