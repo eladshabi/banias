@@ -5,7 +5,7 @@ import time
 publisher = pubsub_v1.PublisherClient()
 topic_path = publisher.topic_path("elad-playground", "Autofleer_Topic")
 
-f = open("/Users/eladshabi/IdeaProjects/elad-banias/backend/src/test/test_events.txt", "r")
+f = open("/src/test/test_events.txt", "r")
 event = f.readline()
 json_file = json.loads(event)
 
