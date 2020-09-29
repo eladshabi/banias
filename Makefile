@@ -11,6 +11,7 @@ TEMPLATE_BUCKET=autofleet_template
 TEMPLATE_FILE=main-af
 DATASET_LOCATION=US
 
+
 TABLE_NAME=fleet_2
 TEMP_FOLDER=tmp
 STAGING_FOLDER=pipeline-staging
