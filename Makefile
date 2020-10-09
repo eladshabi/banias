@@ -10,6 +10,7 @@ TEMP_BUCKET=autofleet_temp
 TEMPLATE_BUCKET=autofleet_template
 TEMPLATE_FILE=main-af
 DATASET_LOCATION=US
+dataflow_region=us-central1
 
 
 TABLE_NAME=fleet_2
@@ -32,7 +33,7 @@ build: install
 	mvn package
 
 drain:
-	./drain.sh
+	./staging_drainer.sh $(dataflow_region) $(PROJECT_ID)
 
 publish_test:
 	python3 $(publish_test_file_path)
@@ -74,7 +75,6 @@ run: build
 	"
 
 test_e2e: run publish_test drain test_pipeline
-
 
 create_template: build
 	mvn exec:java -Dexec.mainClass=com.doitintl.banias.BaniasPipeline \
